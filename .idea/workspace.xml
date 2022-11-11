@@ -4,14 +4,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b00a2af-b184-4439-bb18-7a63eab0c70a" name="Changes" comment="" />
+    <list default="true" id="9b00a2af-b184-4439-bb18-7a63eab0c70a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/client/OrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/client/RestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/generator/OrderRequestGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/generator/UserRequestGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/pojo/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/site/nomoreparties/stellarburgers/pojo/UserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreateUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/EditUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GetUserOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/01e6126a-93ce-46a3-876d-69218c0f756c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/02fb1586-8ba6-42bb-b237-3f7a9da8cffd-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/0946ddd1-f795-4572-b0c8-f8ec4eae63cc-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/12fcfbb2-491b-43ad-ae3e-69a24a9bbe7c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/1617cd2d-9cc8-4b47-946b-a813595f1753-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/5e6fb67a-3c16-4bf9-a22f-15eb2b397d63-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/5fd0ef6b-0bd3-4399-bfe2-16e0f7480040-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/636f6d45-19df-47aa-b974-13acf61d1990-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/6ecdc3ef-d37e-4acc-834f-c30e79801459-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/82f7fe32-c88c-4094-a0b1-8b736d898cf0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/b6bed59f-5286-40ce-8002-9d9f9d217912-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/b91f39b0-2af3-4c4a-8f57-2d9a9ff63afc-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/be4876f2-c0d9-47db-8275-9dea7fc0862b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/c55d9cbd-a4e5-4caf-a56d-78223d3517c9-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/c7acc892-43b1-46cb-94a9-6ed3a6514d29-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/cf47c9e7-dae3-4576-9e46-ede24a5d83c8-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/d4a6f6ab-81a6-4fb1-8f9a-7a053387aef9-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/d608105e-a177-4e18-a7e4-e08b4efadc82-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/d757a61c-7d2b-4071-b1b2-446604534353-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/df75e257-68a4-4c8b-a6b1-be70c9d3a06f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/executor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2H879x7OKLPCJlssTqFwgI76Dln" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,9 +72,66 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/zaursejfulaev/Documents/praktikum/Diplom/Diplom_2"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.LoginUserTest">
+    <configuration name="All in Diplom_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateOrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EditUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EditUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoginUserTest" />
+        <item itemvalue="JUnit.All in Diplom_2" />
+        <item itemvalue="JUnit.CreateOrderTest" />
+        <item itemvalue="JUnit.CreateUserTest" />
+        <item itemvalue="JUnit.EditUserTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,5 +142,26 @@
       <updated>1667654708742</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="77" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
