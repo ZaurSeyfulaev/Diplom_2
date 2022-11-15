@@ -73,13 +73,15 @@ public class CreateUserTest {
     public void userMustNotBeCreatedEmailIsEmptyTest() {
         UserRequest randomUserRequest = getRandomUserRequest();
         randomUserRequest.setEmail("");
-        userClient.createUser(randomUserRequest)
+        token = userClient.createUser(randomUserRequest)
                 .assertThat()
                 .statusCode(SC_FORBIDDEN)
                 .and()
                 .body("success", equalTo(false))
                 .and()
-                .body("message", equalTo("Email, password and name are required fields"));
+                .body("message", equalTo("Email, password and name are required fields"))
+                .extract()
+                .path("accessToken");
     }
 
     @Test
@@ -88,13 +90,15 @@ public class CreateUserTest {
     public void userMustNotBeCreatedNameIsEmptyTest() {
         UserRequest randomUserRequest = getRandomUserRequest();
         randomUserRequest.setName("");
-        userClient.createUser(randomUserRequest)
+        token = userClient.createUser(randomUserRequest)
                 .assertThat()
                 .statusCode(SC_FORBIDDEN)
                 .and()
                 .body("success", equalTo(false))
                 .and()
-                .body("message", equalTo("Email, password and name are required fields"));
+                .body("message", equalTo("Email, password and name are required fields"))
+                .extract()
+                .path("accessToken");
     }
 
     @Test
@@ -103,12 +107,14 @@ public class CreateUserTest {
     public void userMustNotBeCreatedPasswordIsEmptyTest() {
         UserRequest randomUserRequest = getRandomUserRequest();
         randomUserRequest.setPassword("");
-        userClient.createUser(randomUserRequest)
+        token=userClient.createUser(randomUserRequest)
                 .assertThat()
                 .statusCode(SC_FORBIDDEN)
                 .and()
                 .body("success", equalTo(false))
                 .and()
-                .body("message", equalTo("Email, password and name are required fields"));
+                .body("message", equalTo("Email, password and name are required fields"))
+                .extract()
+                .path("accessToken");
     }
 }
