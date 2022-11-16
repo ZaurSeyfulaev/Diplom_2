@@ -5,28 +5,95 @@
   <groupId>org.example</groupId>
   <artifactId>Diplom_2</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-  <name>Maven</name>
-  <url>http://maven.apache.org/</url>
-  <inceptionYear>2001</inceptionYear>
-
-  <distributionManagement>
-    <site>
-      <id>website</id>
-      <url>scp://webhost.company.com/www/website</url>
-    </site>
-  </distributionManagement>
-
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+
+    <!-- версия Aspectj -->
+    <aspectj.version>1.9.7</aspectj.version>
+    <!-- версия Allure -->
+    <allure.version>2.15.0</allure.version>
   </properties>
+  <name>Archetype - Diplom_2</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>4.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>annotations</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <!-- модуль взаимодействия Allure и Junit -->
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-junit4</artifactId>
+      <version>2.19.0</version>
+    </dependency>
+    <dependency>
+      <!-- модуль взаимодействия Allure и RestAssured -->
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-rest-assured</artifactId>
+      <version>2.19.0</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
       <plugin>
-        <artifactId>maven-site-plugin</artifactId>
+        <!-- настройка плагина maven-surefire-plugin -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
         <configuration>
-          <locales>en,fr</locales>
+          <testFailureIgnore>false</testFailureIgnore>
+          <argLine>
+            -javaagent:"/Users/zaursejfulaev/Downloads/aspectjweaver/lib/aspectjweaver.jar"
+          </argLine>
+          <properties>
+            <property>
+              <name>listener</name>
+              <value>io.qameta.allure.junit4.AllureJunit4</value>
+            </property>
+          </properties>
+          <systemProperties>
+            <property>
+              <!-- папка, в которую будут генерироваться отчёты Allure -->
+              <name>allure.results.directory</name>
+              <value>/Users/zaursejfulaev/Documents/praktikum/Diplom/Diplom_2/target/allure-results</value>
+            </property>
+          </systemProperties>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.9.1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <!-- подключение плагина allure-maven для вызова функций Allure с помощью Maven -->
+      <plugin>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-maven</artifactId>
+        <version>2.10.0</version>
+        <configuration>
+          <reportVersion>2.15.0</reportVersion>
         </configuration>
       </plugin>
     </plugins>
